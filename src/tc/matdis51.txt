@@ -1,0 +1,297 @@
+I. PENDAHULUAN
+Di zaman modern ini, teknologi sudah semakin erat
+dengan kehidupan manusia setiap harinya. Teknologi
+seperti smartphone, tablet, dan juga video game sudah
+tidak lagi asing di masyarakat. Salah satu bentuk video
+game yang sangat populer dimainkan oleh para remaja
+adalah game online. Game online yang telah ada saat ini
+sangatlah bervariasi baik dari game bergenre olahraga,
+RPG (Role Playing Game), serta game yang ingin penulis
+bahas pada makalah ini yaitu bergenre MOBA
+(Multiplayer online battle arena). Game dengan genre ini
+dimainkan oleh beberapa orang dalam waktu yang
+bersamaan dan dibagi menjadi dua tim. Setiap orang
+mengontrol satu karakter yang dimainkan sepanjang
+permainan. Kedua tim bertujuan untuk menghancurkan
+bangunan induk dari tim lawan sehingga apabila salah
+satu tim berhasil menghancurkan bangunan induk tim
+lawan, maka tim tersebut memenangkan permainan.
+Salah satu permainan MOBA yang bisa dikatakan
+paling terkenal adalah DOTA 2. Permainan dimainkan
+dengan cara mengontrol sebuah Hero yang dapat dipilih
+dari 108 hero yang bisa dipilih secara bebas. Aksi dan
+respon cepat dari pemain sangatlah dibutuhkan dalam
+memainkan permainan ini. Salah satu keunikan dari game
+ini adalah setiap Hero memiliki skill yang berbeda. Untuk
+menggambarkan mekanisme urutan pengambilan skill
+dalam game DOTA 2 ini, maka cabang ilmu matematika
+diskrit yaitu pohon dapat digunakan sebagai alat bantu
+dalam pengaturan mekanisme tersebut. Struktur pohon
+yang dapat digunakan dalam kasus ini adalah pohon
+berakar dengan bobot bersyarat yang akan penulis uraikan
+lebih lanjut pada bab-bab selanjutnya.
+DOTA 2 telah melampaui ekspektasi dari pembuatnya
+yang sebelumnya telah mengembangkan permainan
+DOTA. Game ini tidak hanya untuk hiburan semata
+karena telah ada banyak sekali perlombaan yang berjalan
+saat ini. Perlombaan ini dikategorikan sebagai E-Sports
+(Electronic Sports) yang berhadiah hingga jutaan dollar
+Amerika Serikat. Perlombaan yang sedang berjalan pada
+saat ini adalah Boston Major dengan hadiah satu juta
+dollar untuk pemenangnya. Tim-tim dari seluruh dunia
+berkompetisi untuk memenangnkannya. Namun, hanya
+saja tim dari Indonesia belum dapat berpartisipasi dalam
+lomba ini disebabkan belum bisa tembus dari babak
+penyisihan. Diharapkan untuk masa yang akan datang
+Indonesia akan lebih maju dalam bidang E-Sports ini.
+II. DASAR TEORI
+2.1 POHON
+A. Definisi Pohon
+Pohon adalah sebuah graf tak-berarah terhubung yang
+tidak mengandung sirkuit. Misalkan G = (V,E) adalah graf
+tak-berarah sederhana dengan jumlah simpulnya n.
+Dimana V adalah himpunan simpul dan E merupakan
+himpunan sisi yang menghubungkan dua buah simpul.
+Maka semua pernyataan dibawah ini berlaku :
+1. G adalah Pohon
+2. Setiap pasang simpul di dalam pohon G dihubungkan
+oleh sebuah lintasan.
+3. G terhubung dan memiliki sisi sebanyak m = n - 1
+sisi
+4. G tidak mengandung sirkuit dan memiliki m = n -1
+buah sisi
+5. G tidak mengandung sirkuit dan penambahan satu
+sisi pada graf akan membuat hanya satu sirkuit
+6. G terhubung dan semua sisinya adalah jembatan
+(jembatan adalah sisi yang bila dihapus menyebabkan graf
+terpecah menjadi dua komponen)
+ B. Pohon Berakar
+Pada kebanyakan aplikasi pohon, simpul tertentu
+diperlakukan sebagai akar (root). Sekali sebuah simpul 
+Makalah IF2120 Matematika Diskrit – Sem. I Tahun 2016/2017
+a
+b
+k
+g
+j
+f
+c d
+l m
+i
+e
+h
+ditetapkan sebagai akar, maka simpul-simpul lainnya
+dapat dicapai dari akar dengan memberi arah pada sisi-sisi
+pohon yang mengikutinya. Pohon berakar adalah pohon
+yang simpulnya diperlakukan sebagai akar dan sisi-sisinya
+diberi arah sehingga menjadi graf berarah.
+GAMBAR 2.1 Pohon Berakar
+Sumber : Slide Kuliah IF 2120 Matematika Diskrit
+materi Pohon oleh Rinaldi Munir
+Adapun beberapa terminologi dari pohon berakar sebagai
+berikut :
+1. Anak dan Orangtua
+Dari sebuah pohon berakar, jika dua buah simpul
+memiliki sisi yang menghubungkan keduanya, maka
+simpul yang memiliki tingkat lebih tinggi disebut orangtua
+dan simpul yang memiliki tingkat lebih rendah disebut
+anak. Sebagai contoh jika dilihat dari gambar 2.1 simpul
+b, c, dan d merupakan anak dari simpul a. Sebaliknya
+simpul a merupakan orangtua dari simpul b, c, dan d.
+2. Lintasan
+Lintasan adalah runtutan simpul-simpul yang
+menguhubungkan suatu simpul ke simpul yang lain.
+Sebagai contoh pada gambar 2.1 lintasan dari simpul a ke
+simpul j ialah a, b, e, j. Sehingga panjang lintasan dari a
+ke j adalah 3.
+3. Keturunan
+Jika terdapat sebuah lintasan dari sebuah simpul x ke
+simpul y, maka dikatakan bahwa y adalah keturunan dari
+x. Pada gambar 2.1 dapat disimpulkan bahwa m adalah
+keturunan dari g.
+4. Saudara Kandung
+Simpul yang memiliki orangtua yang sama disebut
+saudara kandung. Pada gambar 2.1, f adalah saudara
+kandung dari e. Tetapi, g bukan merupakan saudara
+kandung dari e karena orangtua mereka berbeda.
+5. Upapohon
+Upapohon adalah sebuah pohon yang terkandung dalam
+pohon lain. Untuk lebih mudah memahami dapat dilihat
+dari gambar berikut.
+a
+b
+k
+g
+j
+f
+c d
+l m
+i
+e
+h
+GAMBAR 2.2 Penjelasan Upapohon
+Sumber : Slide Kuliah IF 2120 Matematika Diskrit
+materi Pohon oleh Rinaldi Munir
+6. Derajat
+Derajat sebuah simpul adalah jumlah upapohon (atau
+jumlah anak) dari simpul tersebut. Sebagai contoh pada
+gambar 2.1, derajat dari simpul a adalah 3 dan derajat dari
+simpul g adalah 1.
+7. Daun
+Daun adalah simpul yang memiliki derajat nol. Pada
+gambar 2.1, simpul h, i, j, c, l, dan m merupakan daun
+8. Simpul Dalam
+Simpul yang memiliki anak disebut simpul dalam. Pada
+gambar 2.1, b, d, e, g, k merupakan simpul dalam.
+9. Aras (level) atau Tingkat
+Akar dari pohon memiliki aras = 0. Sementara aras simpul
+lainnya = 1 + panjang lintasan dari akar ke simpul
+tersebut. Untuk lebih mudah memahami dapat dilihat dari
+gambar berikut.
+a
+b
+k
+g
+j
+f
+c d
+l m
+i
+e
+h
+0
+1
+2
+3
+4
+Aras
+GAMBAR 2.3 Penjelasan Aras
+Makalah IF2120 Matematika Diskrit – Sem. I Tahun 2016/2017
+Sumber : Slide Kuliah IF 2120 Matematika Diskrit
+materi Pohon oleh Rinaldi Munir
+10. Tinggi atau Kedalaman
+Aras maksimum dari suatu pohon disebut tinggi atau
+kedalaman pohon tersebut. Pohon pada gambar 2.1
+memiliki tinggi 4.
+2.2 DOTA 2
+DOTA 2 adalah game bergenre MOBA (multiplayer
+online battle arena yang merupakan sequel dari game
+Defense of The Ancients. Pengembangan awal dari game
+ini dimulai pada tahun 2009 oleh Valve yang berujung
+pada rilis game pada tahun 2013 yang dapat dimainkan
+secara gratis oleh siapapun.
+GAMBAR 2.4 Map DOTA 2
+(Sumber : http://i.imgur.com/dxlujtE.png diakses pada
+8 Desember 2016 pukul 21.25 WIB)
+DOTA 2 dimainkan oleh 10 orang pemain yang dibagi
+menjadi 2 tim yaitu tim Radiant dan Dire. Kedua tim
+memiliki dua markas yang terpisah dimana Radiant
+memiliki markas di pojok kiri bawah peta dan Dire
+memiliki markas di pojok kanan atas peta. Terdapat tiga
+jalan yang mengjhubungkan kedua markas tersebut yang
+biasa disebut lanes. Tiga jalan ini adalah tempat
+pertarungan dari kedua tim ini. Tujuan permainan adalah
+menghancurkan ancient yang ada di markas musuh. Tim
+pertama yang menchancurkan ancient musuh akan
+dinyatakan menang.
+Pemain akan mengendalikan sebuah karakter yang
+biasa disebut hero sepanjang permainan berlangsung. Ada
+108 hero yang dapat dipilih oleh pemain yang dibagi
+menjadi tiga kelompok yaitu strength, agility, dan
+intelligence. Kemudian hero-hero tersebut
+dikelompokkan lagi berdasarkan peran yaitu support,
+carry, initator, disabler, dll. Setiap hero umumnya
+memiliki empat skill yang unik (aktif ataupun pasif) yang
+bisa diambil seiring bertambahnya level. Dalam
+permainan hero akan bertambah level seiring derngan
+bertambahnya experience. Experience bisa didapat dari
+membunuh prajurit kecil yang biasa disebut creeps
+ataupun membunuh hero musuh. Aspek yang penting lagi
+selain level dari hero adalah uang/gold. Gold dapat
+digunakan untuk membeli barang yang akan memperkuat
+hero yang dikendalikan oleh pemain. Barang yang dibeli
+dapat meningkatkan beberapa atribut yang dimiliki player.
+Berikut adalah beberapa atribut yang dimiliki oleh hero :
+1. Strength
+Strength berpengaruh kepada banyaknya health point
+yang dimiliki oleh hero.
+2. Agility
+Agility berpengaruh kepada attack speed dan armor yang
+dimiliki oleh hero.
+3. Intelligence
+Intelligence berpengaruh kepada banyaknya Mana yang
+dimiliki oleh hero.
+4. Health Point (HP)
+Health Point adalah atribut yang dimiliki hero yang jika
+habis maka akan mengakibatkan mati sementara.
+5. Mana
+Mana dibutuhkan oleh hero untuk bisa melakukan skill.
+6. Level
+Level adalah level dari hero yang dimulai dari 1 sampai
+25.
+7. Armor
+Armor merupakan ketahanan hero dari attack damage.
+8. Magic Resistance
+Magic resistance adalah ketahanan hero dari spell
+damage.
+9. Attack Damage, Spell Damager, Attack Speed, dan
+Attack Range
+Attack damage adalah nilai yang digunakan untuk
+mengurangi HP musuh saat melakukan penyerangan. Spell
+Damage adalah nilai yang digunakan untuk mengurangi
+HP musuh saat melakukan penyerangan magic/ Attack
+Speed mengukur kecepatan interval dari setiap attack.
+Attack Range mengukur jarak dimana hero dapat
+melakukan penyerangan.
+10. Movement Speed
+Movement Speed adalah kecepatan pergerakan hero dalam
+menjelajah di map.
+GAMBAR 2.5 Gameplay DOTA 2
+(Sumber
+:https://www.rockpapershotgun.com/images/15/mar/dote3
+.jpg diakses pada 8 Desember 2016 pukul 21.25 WIB)
+III. PENERAPAN MATERI POHON DALAM
+MEKANISME PENGAMBILAN SKILL DOTA 2
+Dalam Permainan DOTA 2 setiap Hero memiliki skill
+yang dapat diambil pada setiap levelnya. Hero memiliki 
+Makalah IF2120 Matematika Diskrit – Sem. I Tahun 2016/2017
+empat skill yang dapat diambil dengan ketentuan tertentu.
+Skill tersebut dikelompokkan menjadi tiga yaitu skill
+biasa, skill ultimate, dan attribute boost. Skill biasa
+memiliki empat level dan terdiri dari tiga skill yaitu skill
+pertama, kedua, dan ketiga . Skill Ultimate adalah skill keempat
+yang memiliki tiga level. Sementara attribute boost
+adalah penambahan untuk atribut strength, agility, dan
+intelligence.
+Mekanisme pengambilan skill pada game DOTA 2 ini
+sangatlah unik, karena hero akan bisa melakukan level up
+pada skill dengan ketentuan tertentu. Hero memulai
+permainan dari level 1 dan berakhir pada level 25.
+Mekanisme ini dapat dipermudah dengan penerapan
+materi pohon untuk menentukan syarat-syarat yang
+diperlukan. Pohon yang yang dibentuk adalah pohon
+berakar yang memiliki sisi dengan bobot berupa
+persyaratan untuk mengambil skill tersebut. Persyaratan
+yang dimaksud adalah level hero pada saat pengambilan
+skill. Level dari hero harus melewati batas tertentu
+sebelum bisa mengambil skill yang tersedia. Total dari
+skill dan attribute boost yang dapat diambil adalah 25,
+sama seperti total level hero sehingga hero dapat
+mengambil skill setiap ia naik level. Untuk lebih jelasnya,
+mekanisme pengambilan skill digambarkan oleh pohon
+berikut. 
+Makalah IF2120 Matematika Diskrit – Sem. I Tahun 2016/2017
+Makalah IF2120 Matematika Diskrit – Sem. I Tahun 2016/2017
+V. KESIMPULAN
+Salah satu cabang ilmu dari Matematika Diskrit yaitu
+Pohon ternyata memiliki banyak sekali manfaat dan
+kegunaan. Sangat tidak terduga ternyata cabang ilmu ini
+dapat digunakan untuk mengaplikasikan sebuah skilltree
+dari game yang penulis sendiri mainkan.
+Dalam permainan DOTA 2, mekanisme pengambilan
+skill ternyata dapat dimodelkan menjadi pohon berbobot
+yang sangat memudahkan kita untuk memahaminya.
+Sebuah hero memiliki berbagai macam urutan
+pengambilan skill sesuai dengan keiinginan pemain. Hal
+ini sangat unik dan menunjukkan tingginya kompleksitas
+game tersebut. 

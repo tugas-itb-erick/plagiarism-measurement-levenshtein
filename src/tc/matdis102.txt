@@ -1,0 +1,322 @@
+I. PENDAHULUAN
+Defense of the Ancient (DotA) merupakan salah satu
+jenis map modifikasi yang terdapat pada game buatan
+Blizard berjudul Warcraft III : Reign of Chaos dan
+ekspansinya Warcraft 3 : The Frozen Throne. Game karya
+dari Blizard tersebut juga sebenarnya dibuat berdasarkan
+map dari game lain yang sudah ada sebelumnya,judul
+game tersebut adalah StarCraft.
+DotA merupakan salah satu jenis MOBA (Multiplayer
+Online Battle Arena) game yang mengandalkan strategi
+dan kerjasama tim. DotA terdiri atas dua tim (Sentinel dan
+Scourge) yang setiap timnya terdiri atas 5 orang pemain.
+Setiap tim memiliki base pertahanan yang pusat dari
+pertahanannya disebut sebagai ancient.
+Gambar 1. Official Walpaper Dota 2
+(Sumber : http://www.dota2.com)
+Pada awal permainan setiap pemain diberi kesempatan
+untuk memilih role (posisi pemain) dan hero yang akan
+digunakan selama permainan dengan ketentuan tidak
+akan ada hero yang sama saat match berlangsung.
+Terdapat 3 jalan utama (lane) menuju ancient lawan
+dan setiap lane tersebut memiliki 3 level pertahanan base.
+Pertahanan level 0 merupakan sebuah menara penembak
+(tower) yang paling depan dan paling dekat dengan
+daerah pertahanan level 0 lawan. Pertahanan level
+berikutnya juga merupakan sebuah tower dengan
+serangan dan pertahanan yang lebih kuat dari level
+sebelumnya. Sesuatu yang harus diperhatikan adalah
+ancient hanya akan dapat dihancurkan jika 3 level
+pertahanan salah satu lane telah dihancurkan. Setelah itu,
+game akan berakhir ketika salah satu dari ancient di
+antara kedua tim hancur dan tentunya pemenang dari
+game adalah tim yang ancient-nya tidak hancur.
+Seiring dengan meningkatnya peminat dari map
+modifikasi ini, popularitas map ini kemudian semakin
+meningkat di kalangan para gamers dunia. Map
+modifikasi ini juga menjadi sorotan banyak perusahaan
+game terkenal dunia. Sebuah korporasi terkenal yaitu
+Valve Corporation kemudian mengambil ide untuk
+mengembangkan map modifikasi ini untuk menjadi
+sebuah game yang dapat berdiri sendiri dan dengan
+desain game yang jauh lebih nyata. Karya Valve
+Corporation tersebut kini dikenal sebagai DotA 2.
+.
+II. DASAR TEORI
+A. Graf
+Graf merupakan sebuah ‘alat’ yang dapat digunakan
+sebagai representasi terhadap objek-objek yang bersifat
+diskrit dan hubungan antara objek-objek tersebut. Pada
+umumnya graf menyatakan objek-objek tersebut dalam
+representasi fisik bulat atau titik, dan kemudian
+hubungan antar objek tersebut direpresentasikan dalam
+bentuk garis.Selain dalam wujud titik dan garis.
+Gambar 2. Contoh Graf
+(Sumber :http://informatika.stei.itb.ac.id/~rinaldi.munir/Matdis/2015-
+2016/Graf%20(2015).ppt)
+Makalah IF2120 Matematika Diskrit – Sem. I Tahun 2015/2016
+Selain itu, graf juga dapat didefinisikan sebagai
+pasangan himpunan tidak kosong dari simpul ( V/
+Vertex) dan himpunan sisi (dapat kosong) yang
+menghubungkan tiap simpul (E/Edge).
+Dalam bentuk notasi graf dapat dituliskan sebagai :
+G = (V,E)
+Keterangan :
+G = Graf
+V = Vertex
+E = Edge
+Graf memiliki banyak jenis, jika dilihat dari
+keberadaan gelang maupun sisi ganda graf digolongkan
+menjadi dua jenis yaitu graf sederhana (simple graph)
+dan graf tak-sederhana(unsimple-graph). Graf
+dikatakan memiliki sisi ganda adalah ketika pada graf
+terdapat simpul dengan sisi penghubung lebih dari satu.
+Graf dengan sisi gelang dapat terjadi jika graf memiliki
+simpul yang mempunyai sisi berawal dan menuju pada
+dirinya sendiri ,sering digambarkan melingkar
+sehingga disebut sebagai gelang.
+Selain itu, graf juga dibedakan berdasarkan ada
+tidaknya arah pada sisi graf. Graf tersebut digolongkan
+menjadi dua jenis yaitu graf berarah(directed graph
+atau digraph) dan graf tak-berarah(undirected graph).
+Kedua jenis graf ini kemudian dapat digolongkan lebih
+spesifik berdasarkan banyaknya keberadaan sisi
+berarah pada satu simpul, tidak jauh berbeda dengan
+jenis sebelumnya jika memiliki lebih dari satu sisi
+berarah pada sebuah simpul maka graf tersebut
+dikatakan sebagai graf-ganda berarah.
+Secara singkat jenis jenis graf tersebut dapat
+dikelompokkan seperti pada tabel di bawah ini :
+Tabel 1. Jenis Graf
+(Sumber :http://informatika.stei.itb.ac.id/~rinaldi.munir/Matdis/2015-
+2016/Graf%20(2015).ppt)
+Selain yang telah dibahas sebelumnya, masih terdapat
+jenis graf lain yang penggolongannya berdasarkan hal
+hal lain seperti sisi dengan bobot.
+B. Pohon
+Pohon merupakan sebuah graf khusus yang tidak
+berarah dan juga tidak mengandung sirkuit di
+dalamnya. Pohon dikhususkan dari graf karena pohon
+memiliki beberapa keunggulan, keunggulan yang
+paling utama adalah sifat nya yang sederhana mudah
+dipahami, mudah divisualisasikan dan juga sangat
+cocok untuk diaplikasikan dalam permasalahanpermasalahan
+yang terjadi dalam kehidupan seharihari.
+Gambaran umum pohon tidak begitu jauh dari graf
+biasa, yaitu seperti gambar di bawah ini :
+Gambar 3. Contoh Pohon
+(Sumber :http://informatika.stei.itb.ac.id/~rinaldi.munir/Matdis/2015-
+2016/Graf%20(2015).ppt)
+Graf khusus ini juga digolongkan menjadi beberapa jenis
+pohon,yaitu :
+1. Pohon berakar ( rooted tree)
+Pohon berakar merupakan pohon yang satu buah
+simpulnya diperlakukan sebagai akar dan sisi-sisinya
+diberi arah sehingga menjadi graf berarah. Tetapi karena
+sesuai dengan kenyataan bahwa pohon bukan merupakan
+graf berarah, maka dibuat perjanjian sehingga tanda
+panah pada sisi graf dihapus dan akar akan selalu dimulai
+sebagai simpul paling atas yang akan hanya bercabang ke
+bawah.
+2. Pohon terurut (ordered tree)
+Pohon terurut merupakan pohon yang sangat
+mementingkan keterurutan dari anak-anaknya.
+3. Pohon n-ary
+Pohon n-ary merupakan pohon dengan akar yang
+mempunyai paling banyak n buah anak. Pohon n-ary
+dikatakan teratur atau penuh(full) ketika setiap
+simpul/cabang pada pohon mempunyai n buah anak.
+4. Pohon Keputusan
+Pohon keputusan merupakan pohon yang dapat
+memetakan sebuah alternatif pemilihan keputusan dalam
+suatu keadaan/masalah.Penggunaan pohon keputusan
+membantu seseorang dalam menunjukkan kemungkinankemungkinan
+yang akan terjadi pada suatu masalah mulai
+dari pengambilan keputusan paling awal sampai dengan
+paling akhir.
+Makalah IF2120 Matematika Diskrit – Sem. I Tahun 2015/2016
+III. PENERAPAN GRAF DAN POHON DALAM
+PERMAINAN DOTA 2
+A. Peta / Map
+Gambar 4. Peta Dota 2 diambil saat bermain
+Pada gambar terlihat jelas bahwa setiap tim memiliki 3
+lane utama untuk melakukan penyerangan dan pertahanan
+selama bermain. Setiap lane memiliki minimal sebuah
+menara pertahanan/tower dan 4 buah creep dengan
+kekuatan berbeda pada setiap tower. Jika dilihat secara
+sederhana, tidak ada hubungan antara map Dota 2 dengan
+graf maupun pohon. Ketika bermain dota 2, pemain baru
+akan sadar bahwa penataan tower pada setiap lane
+menggunakan prinsip pohon, yaitu tower level 1 hanya
+akan dapat hancur ketika tower level 0 dihancurkan dan
+begitu selanjutnya.
+Seorang pemain berusaha untuk langsung melewati tower
+level 0 dan mencoba untuk menyerang tower level 1
+hanya akan menghabiskan hp(health point) mereka untuk
+menemui tower level 1 dengan keadaan invulnerabe
+(tidak dapat diserang). Hal ini sama dengan prinsip
+pohon, untuk mencapai akar dari sebuah pohon seseorang
+harus melakukan penelusuran mulai dari daun paling
+bawah. Selain itu, untuk mengakses akar paling atas,
+seseorang harus melalui beberapa level dari daun agar
+dapat sampai ke akar. Sama hal nya dengan game ini,
+Ancient juga hanya akan dapat diserang jika dan hanya
+jika salah satu lane pertahanan telah berhasil
+dihancurkan.
+Sesampai di daerah base lawan, dekat dengan ancient
+terdapat dua buah tower pelindung, hanya saja berbeda
+dengan tower sebelumnya tower ini tidak wajib untuk
+dihancurkan (dengan kata lain ancient dapat diserang
+oleh pemain tanpa harus bersusapayah untuk
+menghancurkan tower terlebih dahulu).
+B. Drafting Hero
+Permainan Dota 2 bukanlah sesederhana siapa yang
+terlebih dahulu berhasil untuk menghancurkan tower
+dan ancient lawan. Permainan ini juga mengandalkan
+strategi dan kekompakan saat bermain. Permainan ini
+memilki lebih dari seratus jenis hero, dan tidak semua
+hero dapat saling berkoordinasi dengan baik.Setelah
+mengetahui permasalahan ini akhirnya disadari bahwa
+pada setiap permainan /match diperlukan drafting yang
+tepat kepada setiap tim.Drafting adalah istilah untuk
+melakukan pemilihan pasangan 5 hero yang akan
+digunakan tim saat bermain, serta melakukan 5 kali
+banned pada beberapa hero yang dianggap
+menyusahkan hero pilihan sehingga tidak dapat
+digunakan dalam permainan. Setiap hero pada dota
+saling berhubungan dan membetuk sebuah graf, setiap
+hero diibaratkan sebuah simpul yang berhubungan
+dengan hero lain. Graf tersebut kemudian memiliki sisi
+dengan definisi sebagai sisi lemah dan sisi kuat , yaitu
+tingkat kecocokan hero tersebut dengan hero yang lain.
+Hal ini akan semakin sulit untuk menentukan drafting
+hero, karena terdapat ratusan hero yang berarti terdapat
+ratusan simpul yang harus diperhatikan.
+Kemenangan suatu tim sangat dapat diprediksi dari
+draft hero , karena dengan melalui graf yang dijelaskan
+sebelumnya kita dapat mengetahui potensi hero tim
+mana yang lebih besar untuk menang jika diadu dalam
+permainan. Dari keadaan tersebut muncul istilah
+menang draft pada permainan dota 2 , tetapi tetap saja
+hal tersebut merupakan sebuah probabilitas.
+C. Item Core
+Permainan dota untuk setiap match, umumnya menyita
+waktu seseorang sekitar 40-50 menit waktu bermain
+(mode normal match). Mengapa memakan waktu yang
+begitu lama untuk sebuah pertandingan saja ? Hal ini
+dikarenakan setiap pemain bukan hanya bertarung
+untuk menghancurkan tower, mereka juga bertarung
+untuk mencari gold dan membeli item memperkuat diri.
+Setiap hero pada dota 2 memiliki basis bermain yang
+berbeda-beda, sehingga tidak semua jenis item cocok
+untuk dipasangkan pada jenis hero tertentu.
+Berikut sebuah contoh item yang cocok pada sebuah
+hero :
+Gambar 5. Item Core dalam game
+Makalah IF2120 Matematika Diskrit – Sem. I Tahun 2015/2016
+Starting item (contohnya pada gambar 5) pada dota 2
+umumnya merupakan basic item, yaitu item item yang
+dapat membantu player di awal permainan. Kemudian
+core item merupakan item dengan cost gold yang cukup
+mahal dan kemungkinan besar hanya akan dapat dibeli
+setelah bermain sekitar 10-20 menit di dalam game. Cost
+gold yang cukup mahal karena pembuatan item ini
+membutuhkan basic item . Begitu juga keterurutannya
+dengan core item, late item juga memerlukan core item
+untuk pembuatannya. Waktu yang diperlukan dalam
+pembuatan late item pada game ini umumnya memakan
+waktu 25 hingga 40 menit bermain di dalam game.
+Meskipun terdapat banyak jenis late item, tetap terdapat
+rejected item yaitu item-item yang tidak akan cocok
+digunakan hero tersebut saat bermain di dalam game.
+Pemodelan item yang ada di dalam dota 2 dibuat dalam
+bentuk desain graf dan pohon. Graf digunakan saat
+seseorang ingin mengetahui hubungan antara sebuah item
+dengan item lainnya, desain pohon terlihat ketika
+seseorang ingin melihat daun-daun(basic/core item)
+penyusun sebuah akar (late/core item). Hal ini tidak
+bersifat maya, tampilan graf dan tree dapat dilihat
+langsung saat bermain, dengan cara menekan tombol F5
+(defaultnya) di dalam permainan, kemudian shift + klik
+kiri pada item yang ingin dilihat pohon nya,contoh
+tampilan akan terlihat seperti gambar di bawah ini :
+Gambar 6. Pohon dari item force staff
+Pada permainan dota 2, semua jenis item dan
+hubungannya dengan item lain digambarkan dengan
+sangat jelas menggunakan bantuan struktur pohon dan
+graf.
+D. Skill
+Skill merupakan kemampuan unik yang dimiliki hero di
+dalam permainan. Setiap pemain memiliki kemampuan
+unik mereka masing-masing, dan kemampuan tersebut
+hanya dapat diperoleh maupun ditingkatkan dengan
+syarat level dan juga telah mengambil syarat skill yang
+berhubungan di dalam game ini. Syarat level yang
+dimaksud adalah setiap hero di dalam game hanya
+mampu meng-upgrade/ mengambil skill baru ketika level
+up. Syarat skill adalah sebuah skill hanya akan aktif
+ketika telah diaktifkan skill yang lain (akan dibahas
+nanti).
+Setiap hero memiliki sebuah skill ultimate yang
+umumnya hanya dapat diambil/di-upgrade jika telah level
+up sebanyak 6 kali. Tidak ada syarat gold untuk
+melakukan upgrade / pengambilan skill. Hero dapat
+menaikkan level dengan cara membunuh creep, hero atau
+juga mengambil bounty rune yang muncul secara acak
+dalam waktu tertentu di sungai.
+Representasi skill dota 2 dibuat dalam bentuk pohon.
+Lebar pohon bergantung kepada jenis hero yang dipilih.
+Beberapa hero memiliki ukuran pohon yang lebih lebar
+karena memiliki jenis skill yang lebih banyak, tetapi hal
+ini bukan berarti hero tersebut sangat hebat, pembuatan
+hero tidak adil. Skill yang dimiliki setiap hero selalu
+dibalance oleh Valve pada setiap update game ,sehingga
+tidak mungkin ada hero yang lebih hebat dari hero yang
+lain (semua bergantung kepada tingkat kesabaran dan
+strategi pemain).
+Pada sebagian hero, sejumlah skill hanya akan dapat
+diaktifkan ketika skill yang lain telah diambil. Contohnya
+pada gambar di bawah ini :
+Gambar 7. Pohon skill hero Invoker pada game
+Gambar di atas menunjukkan urutan pengambilan skill
+yang dilakukan seorang player mulai dari level 1 hingga
+level 25 (tampilan di atas di ambil langsung di dalam
+game). Invoker merupakan hero multi-skill , memiliki
+skill terbanyak di dalam dota 2. Meskipun jika dilihat di
+atas hanya ada 4 buah skill, sebenarnya hero tersebut
+memiliki lebih dari 8 buah skill. Skill hero ini dapat
+bertambah melalui kombinasi 3 skill teratasnya, setiap
+kombinasi 3 warna (merah, unggu dan biru) yang ia
+miliki menghasilkan jenis skill yang berbeda. Penataan
+skill tersebut jelas mirip dengan struktur pengambilan
+pohon keputusan. Pohon dengan 3 level, dan akan
+memeroleh keputusan keluaran skill pada bagian
+daunnya. Perlu ditekankan bahwa skill-nya adalah hasil
+kombinasi (bukan permutasi).
+Pada umumnya, penerapan pohon pada skill dimulai dari
+pengambilan skill pertama (saat level 1 , awal memasuki
+game) yang dipilih oleh player. Dengan pilihan berbeda,
+urutan cabang pohon akan berbeda. Perbedaan urutan
+cabang pohon tersebut pasti akan memengaruhi
+kemampuan hero dalam permainan, sehingga
+maksimalnya kemampuan hero juga ditentukan dalam
+pengambilan skill. Pengambilan pohon skill juga
+bergantung kepada kondisi hero saat bertarung sehingga
+diperlukan keputusan dalam memilih skill yang lebih
+cocok diambil terlebih dahulu saat bermain. Sehingga
+skill hero di dalam dota 2 sangat mirip dengan pemodelan
+pohon dengan jenis pohon keputusan.
+Makalah IF2120 Matematika Diskrit – Sem. I Tahun 2015/2016
+IV. KESIMPULAN
+Permainan dota 2 merupakan salah satu permainan
+MOBA(multiplayer online battle arena game) yang
+sangat dekat kaitannya dengan penerapan ilmu mengenai
+graf dan juga pohon. Fitur peta, skill, item dan drafting
+hero masih merupakan sebagian kecil dari penerapan graf
+dan pohon di dalam game ini. Tidak hanya pada interface
+dan gameplay, pohon juga diperlukan dalam pengambilan
+keputusan tindakan saat bermain. Pohon keputusan sangat
+bermanfaat bagi para player untuk memaksimalkan
+kemampuan mereka untuk memenangkan game. Pohon
+keputusan juga membantu player untuk menghindari
+tindakan yang merugikan saat bermain.

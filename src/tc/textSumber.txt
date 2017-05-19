@@ -1,0 +1,12 @@
+The first and foremost thanks from the author is to the
+God for giving the author inspiration and time to be able
+to write and finish this paper successfully. Special
+acknowledgment belongs to Rinaldi Munir, discrete
+mathematic lecturer in Bandung Institute of Technology,
+to be tender and nice in teaching, as well as giving the
+author task to write this paper so that the author can
+practice to write a good paper and to learn about
+computer science deeper. Last but not least, other thanks
+will the author give to the author’s parents as they
+continuously support the author to undergo a college life
+in Bandung Institute of Technology. 

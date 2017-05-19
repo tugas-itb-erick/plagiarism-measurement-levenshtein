@@ -1,0 +1,8 @@
+The author thanks Dra. Harlili S. M.Sc. as the lecturer of
+the author’s Discrete Mathematics class, for guidance in
+preparing this paper. The author would also like to thank
+the developers and contributors of the open-source Pillow
+Python image library and NumPy scientific computing
+library, which has greatly simplified the author’s
+implementation of the image segmentation and
+background separation algorithm.
